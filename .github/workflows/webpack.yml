@@ -9,6 +9,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - run: npm run generate && touch .nojekyll
+      - run: npm ci && npm run generate && touch .nojekyll
       - uses: actions/upload-pages-artifact@v3
       - uses: actions/deploy-pages@v4
