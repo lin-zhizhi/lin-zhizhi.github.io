@@ -1,0 +1,42 @@
+<!--
+	Blog
+	File:/Article.tpl.html
+	Date:2023.04.16
+	By MIT License.
+	Copyright (c) 2022-2023 Ziyao.All rights reserved.
+-->
+
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf8">
+		<title>梓瑶233 - {{title}}</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.css" crossorigin="anonymous">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.js" crossorigin="anonymous"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+		<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\[", right: "\\]", display: true},
+                    {left: "\\(", right: "\\)", display: false}
+                ],
+                throwOnError: false
+            });
+        });
+		</script>
+	</head>
+
+	<body>
+		{{content}}
+		<div style = "text-align: right">
+			Publish: {{date}}
+			{{change}}
+		</div>
+		<div style = "text-align: center">
+			如无特殊说明，本站所有内容以 CC-BY-SA 4.0 协议发布</br>
+			<a href="./index.html">GO BACK</a>
+		</div>
+	</body>
+</html>

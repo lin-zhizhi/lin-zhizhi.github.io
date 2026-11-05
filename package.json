@@ -1,0 +1,17 @@
+{
+  "name": "linzhizhi-blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node generate.ts",
+    "generate:bun": "bun generate.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "marked": "^16.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "typescript": "^5.9.3"
+  }
+}
