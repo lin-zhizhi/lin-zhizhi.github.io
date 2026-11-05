@@ -18,6 +18,7 @@ jobs:
         with:
           node-version: 24
       - run: npm ci && npm run generate && touch output/.nojekyll
+      - run: ls -R output
       - uses: actions/upload-pages-artifact@v3
         with:
           path: output
